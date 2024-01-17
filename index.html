@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=devide-width, initial-scale=1, maximum-scale=1"/>
+    <title>IDCAT, Identitat Digital</title>
+    
+    
+    <link type="text/css" media="all" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <link type="text/css" media="all" rel="stylesheet" href="style.css"/>
+    
+</head>
+<body>
+<div class="base">
+    <form id="formAccount">
+        <div class="form-header">
+            <h3>Change Password</h3>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-icon">
+                    <i class="fa fa-lock fa-fw"></i>
+                </div>
+                <input name="Password" class="form-control" type="password" placeholder="Password" autocomplete="off" required onkeyup="passwordValidation($(this))">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-icon">
+                    <i class="fa fa-lock fa-fw"></i>
+                </div>
+                <input name="PasswordRep" class="form-control" type="password" placeholder="Repeat Password" autocomplete="off" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="psw-validation-container">
+                <p>Password requirements:</p>
+                <ul>
+                    <li class="length error">
+                        <i class="fa fa-times fa-fw"></i><i class="fa fa-check fa-fw"></i>
+                        Between 12-20 characters
+                    </li>
+                    <li class="upper error">
+                        <i class="fa fa-times fa-fw"></i><i class="fa fa-check fa-fw"></i>
+                        Uppercase
+                    </li>
+                    <li class="lower error">
+                        <i class="fa fa-times fa-fw"></i><i class="fa fa-check fa-fw"></i>
+                        Lowercase
+                    </li>
+                    <li class="number error">
+                        <i class="fa fa-times fa-fw"></i><i class="fa fa-check fa-fw"></i>
+                        Number
+                    </li>
+                    <li class="special error">
+                        <i class="fa fa-times fa-fw"></i><i class="fa fa-check fa-fw"></i>
+                        Special character
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="btn btn-block btn-primary animated btn-submit" type="submit" disabled>Save</button>
+    </form>
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
